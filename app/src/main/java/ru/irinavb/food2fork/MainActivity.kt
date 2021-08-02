@@ -4,12 +4,11 @@ import android.os.Bundle
 import androidx.activity.ComponentActivity
 import androidx.activity.compose.setContent
 import androidx.compose.foundation.background
-import androidx.compose.foundation.layout.Column
-import androidx.compose.foundation.layout.Spacer
-import androidx.compose.foundation.layout.padding
+import androidx.compose.foundation.layout.*
 import androidx.compose.material.*
 import androidx.compose.material.SnackbarDefaults.backgroundColor
 import androidx.compose.runtime.Composable
+import androidx.compose.ui.Alignment
 import androidx.compose.ui.Modifier
 import androidx.compose.ui.graphics.Brush
 import androidx.compose.ui.graphics.Color
@@ -30,14 +29,23 @@ class MainActivity : ComponentActivity() {
                 Spacer(modifier = Modifier.padding(top = 10.dp))
                 Button(
                     onClick = {},
-                    colors = ButtonDefaults.buttonColors(
-                        backgroundColor = Color.Yellow
-                    )
+                    contentPadding = PaddingValues(0.dp)
                 ) {
-                    Text(text = "A Button")
+                    Text(
+                        text = "A Button",
+                        modifier = Modifier
+                            .align(Alignment.CenterVertically)
+                            .background(brush = Brush.verticalGradient(
+                                colors = listOf(
+                                    Color.Yellow,
+                                    Purple700
+                                )))
+                            .padding(8.dp)
+                    )
                 }
             }
         }
     }
 }
+
 
