@@ -29,7 +29,7 @@ class RecipeNetworkEntity (
     var cookingInstructions: String? = null,
 
     @SerializedName("ingredients")
-    var ingredients: List<String>? = null, 
+    var ingredients: List<String>? = null,
 
     @SerializedName("date_added")
     var dateAdded: String? = null,
