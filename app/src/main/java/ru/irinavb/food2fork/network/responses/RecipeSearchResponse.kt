@@ -1,13 +1,13 @@
 package ru.irinavb.food2fork.network.responses
 
 import com.google.gson.annotations.SerializedName
-import ru.irinavb.food2fork.network.model.RecipeNetworkEntity
+import ru.irinavb.food2fork.network.model.RecipeDto
 
-class RecipeSearchResponse(
+data class RecipeSearchResponse(
 
     @SerializedName("count")
     var count: Int,
 
     @SerializedName("results")
-    var recipes: List<RecipeNetworkEntity>
+    var recipes: List<RecipeDto>
 )
