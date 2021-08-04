@@ -1,4 +1,4 @@
-package ru.irinavb.food2fork.fragments
+package ru.irinavb.food2fork.presentation.ui.recipe_list
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -17,11 +17,22 @@ import androidx.compose.ui.text.TextStyle
 import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.fragment.app.Fragment
+import androidx.fragment.app.viewModels
 import androidx.navigation.findNavController
+import dagger.hilt.android.AndroidEntryPoint
 import ru.irinavb.food2fork.R
-import ru.irinavb.food2fork.ui.theme.BasicGreen
+import ru.irinavb.food2fork.presentation.ui.theme.BasicGreen
 
+@AndroidEntryPoint
 class RecipeListFragment : Fragment() {
+
+    val viewModel: RecipeListViewModel by viewModels()
+
+    override fun onCreate(savedInstanceState: Bundle?) {
+        super.onCreate(savedInstanceState)
+        println("RecipeListFragment: $viewModel")
+
+    }
 
     override fun onCreateView(
         inflater: LayoutInflater,

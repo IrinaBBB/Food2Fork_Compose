@@ -1,4 +1,4 @@
-package ru.irinavb.food2fork.ui.theme
+package ru.irinavb.food2fork.presentation.ui.theme
 
 import androidx.compose.foundation.isSystemInDarkTheme
 import androidx.compose.material.MaterialTheme

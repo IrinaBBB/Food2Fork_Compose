@@ -1,4 +1,4 @@
-package ru.irinavb.food2fork.ui.theme
+package ru.irinavb.food2fork.presentation.ui.theme
 
 import androidx.compose.material.Typography
 import androidx.compose.ui.text.TextStyle
