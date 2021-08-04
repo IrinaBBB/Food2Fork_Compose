@@ -1,4 +1,4 @@
-package ru.irinavb.food2fork
+package ru.irinavb.food2fork.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater

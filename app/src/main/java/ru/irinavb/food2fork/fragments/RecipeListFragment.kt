@@ -1,4 +1,4 @@
-package ru.irinavb.food2fork
+package ru.irinavb.food2fork.fragments
 
 import android.os.Bundle
 import android.view.LayoutInflater
@@ -18,6 +18,7 @@ import androidx.compose.ui.unit.dp
 import androidx.compose.ui.unit.sp
 import androidx.fragment.app.Fragment
 import androidx.navigation.findNavController
+import ru.irinavb.food2fork.R
 import ru.irinavb.food2fork.ui.theme.BasicGreen
 
 class RecipeListFragment : Fragment() {

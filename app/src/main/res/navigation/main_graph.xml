@@ -6,7 +6,7 @@
 
     <fragment
         android:id="@+id/recipeListFragment"
-        android:name="ru.irinavb.food2fork.RecipeListFragment"
+        android:name="ru.irinavb.food2fork.fragments.RecipeListFragment"
         android:label="RecipeListFragment" >
         <action
             android:id="@+id/viewRecipe"
@@ -14,6 +14,6 @@
     </fragment>
     <fragment
         android:id="@+id/recipeFragment"
-        android:name="ru.irinavb.food2fork.RecipeFragment"
+        android:name="ru.irinavb.food2fork.fragments.RecipeFragment"
         android:label="RecipeFragment" />
 </navigation>
